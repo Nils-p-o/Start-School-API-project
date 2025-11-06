@@ -19,7 +19,7 @@ It’s designed for groups who want a quick laugh and social connection — whet
 ## API Selection
 **API Name:** Dog CEO API, Car Imagery API, Random Duck API, NASA APOD, Foodish API
   
-**API Documentation:** https://dog.ceo/dog-api/ ;   
+**API Documentation:** https://dog.ceo/dog-api/ ; https://carapi.app/ ; https://random-d.uk/api ; https://api.nasa.gov/ ; https://foodish-api.com/  
 **Why this API?** [1-2 sentences]
 
 ### 2. GitHub Repository
