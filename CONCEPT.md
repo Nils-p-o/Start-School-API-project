@@ -6,7 +6,7 @@
 - Member 3 - [Carlos Mestre]
 
 ## Project Description
-This game uses public image APIs (like random dogs, ducks, cars, or space photos) to create a quick, hilarious guessing challenge for friends.
+This game uses public image API (like random dogs, ducks, cars, or space photos) to create a quick, hilarious guessing challenge for friends.
 In each round, everyone sees the same image — except one player, the impostor, who must bluff their way through conversation to guess what the image actually is.
 It’s a light, memeable party game that blends deduction, humor, and chaos — playable locally or online.
 
@@ -17,11 +17,11 @@ It’s designed for groups who want a quick laugh and social connection — whet
 
 
 ## API Selection
-**API Name:** Dog CEO API, Car Imagery API, Random Duck API, NASA APOD, Foodish API
+**API Name:** Unsplash
   
-**API Documentation:** https://dog.ceo/dog-api/ ; https://carapi.app/ ; https://random-d.uk/api ; https://api.nasa.gov/ ; https://foodish-api.com/  
+**API Documentation:** https://unsplash.com/documentation  
 **Why this API?** [1-2 sentences]
-
+https://api.unsplash.com/photos/random?client_id=&query=ducks
 ### 2. GitHub Repository
 
 **Required structure for now:**
@@ -34,18 +34,6 @@ project-name/
 - Brief description
 - Team members
 - API being used
-
-## App Description
-This game uses public image APIs (like random dogs, ducks, cars, or space photos) to create a quick, hilarious guessing challenge for friends.
-In each round, everyone sees the same image — except one player, the impostor, who must bluff their way through conversation to guess what the image actually is.
-It’s a light, memeable party game that blends deduction, humor, and chaos — playable locally or online.
-
-## Problem statement
-Most online party games require accounts, servers, or subscriptions, making it hard for friends to play something spontaneous and funny together.
-This app solves that by offering a lightweight, instantly playable social game powered by free public APIs, where humor and creativity matter more than skill.
-It’s designed for groups who want a quick laugh and social connection — whether on the couch or in a call.
-
-
 
 
 Gameplay Loop
