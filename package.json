@@ -19,6 +19,11 @@
   },
   "homepage": "https://github.com/Nils-p-o/Start-School-API-project#readme",
   "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.1",
     "vite": "^7.2.2"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
   }
 }
