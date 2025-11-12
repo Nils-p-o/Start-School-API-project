@@ -1,50 +1,35 @@
 import { useState } from "react";
 
 export default function App() {
-  const [image, setImage] = useState(null);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState("");
+  const [started, setStarted] = useState(false);
 
-  async function fetchImage(query = "duck") {
-    setLoading(true);
-    setError("");
-    try {
-      const res = await fetch(`/api/random-photo?query=${query}`);
-      const data = await res.json();
-
-      if (res.ok && data && data[0]) {
-        setImage(data[0].urls.small);
-      } else {
-        setError("No image found, try another word!");
-      }
-    } catch (err) {
-      console.error("Error fetching image:", err);
-      setError("Network or API error");
-    } finally {
-      setLoading(false);
-    }
+  function handleStart() {
+    setStarted(true);
   }
 
+  if (!started) {
+    // Start screen
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-center gap-4 text-center p-6">
+        <h1 className="text-4xl font-bold">guess.exe 🕵️‍♂️</h1>
+        <p className="text-lg text-gray-700">
+          Welcome to the ultimate meme guessing game!
+        </p>
+        <button
+          onClick={handleStart}
+          className="bg-blue-500 text-white rounded-xl px-6 py-3 hover:bg-blue-600"
+        >
+          Start Game
+        </button>
+      </div>
+    );
+  }
+
+  // Game screen (placeholder for now)
   return (
     <div className="min-h-screen flex flex-col items-center justify-center gap-4 text-center p-6">
-      <h1 className="text-3xl font-bold">guess.exe 🕵️‍♂️</h1>
-
-      <button
-        onClick={() => fetchImage("dog")}
-        className="bg-blue-500 text-white rounded-xl px-4 py-2 hover:bg-blue-600"
-      >
-        Fetch Random Dog
-      </button>
-
-      {loading && <p>Loading...</p>}
-      {error && <p className="text-red-500">{error}</p>}
-      {image && (
-        <img
-          src={image}
-          alt="random"
-          className="rounded-2xl shadow-md max-w-xs"
-        />
-      )}
+      <h2 className="text-2xl font-bold">Game Started!</h2>
+      <p>Here you’ll see images from the API and play the guessing game.</p>
     </div>
   );
 }
