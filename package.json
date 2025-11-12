@@ -4,7 +4,8 @@
   "description": "repo for the API project in StartSchool",
   "main": "game_logic.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Nils-p-o/Start-School-API-project/issues"
   },
-  "homepage": "https://github.com/Nils-p-o/Start-School-API-project#readme"
+  "homepage": "https://github.com/Nils-p-o/Start-School-API-project#readme",
+  "devDependencies": {
+    "vite": "^7.2.2"
+  }
 }
